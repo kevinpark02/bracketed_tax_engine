@@ -1,9 +1,9 @@
 import React from "react";
 
-const app = () => (
+const App = () => (
   <div>
     <h1>Bracketed Tax Engine</h1>
   </div>
 );
 
-export default app;
+export default App;
