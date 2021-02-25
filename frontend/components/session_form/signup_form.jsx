@@ -52,9 +52,9 @@ class SignupForm extends React.Component {
       const sessionHeading = "Sign up for your account"
 
       return(
-          <div className="signup-form">
+          <div className="session-form">
               <form onSubmit={this.handleSubmit}>
-                  <div className="signup-form-inputs">
+                  <div className="session-form-inputs">
                       {this.renderErrors()}
                         <h4>{sessionHeading}</h4>
             
@@ -82,7 +82,7 @@ class SignupForm extends React.Component {
                                 onChange={this.handleInput('password')}
                                 className="input-fields"/>
 
-                        <input type="submit" value={formType} className ="yellow-btn sign-up-form-btn"/>
+                        <input type="submit" value={formType} className ="yellow-btn session-form-btn"/>
 
                         <Link className="session-form-alt" to={`/${linkType}`}>{otherLinkName}</Link>
                   </div>
