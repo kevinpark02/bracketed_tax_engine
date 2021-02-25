@@ -1,9 +1,9 @@
-.blue-btn {
+.white-btn {
     border: 1px black solid;
     padding: 10px;
     border-radius: 10px;
     background: #fff;
-    color: #0066cc;
+    color: #333;
     box-shadow: inset;
     cursor: pointer; 
 }

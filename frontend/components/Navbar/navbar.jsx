@@ -5,7 +5,7 @@ const Navbar = ({currentUser, logout}) => {
     const greeting = currentUser ? (
         <div className="logged-nav">
             <div className="logged-left">
-                <div className="blue-btn"><Link to="/home">Home</Link></div>
+                <div className="white-btn"><Link to="/home">Home</Link></div>
             </div>
             <div className="logged-right">
                 <p>Hello, {currentUser.fname} {currentUser.lname}</p>
@@ -18,7 +18,7 @@ const Navbar = ({currentUser, logout}) => {
                 <Link to="/"><h1 className="title-nav">Bracketed Tax Engine</h1></Link>
             </div>
             <div className="auth-nav">
-                <li className="blue-btn"><Link to="/signup">Sign Up</Link></li>
+                <li className="white-btn"><Link to="/signup">Sign Up</Link></li>
                 <li className="yellow-btn"><Link to="/login">Log In</Link></li>
             </div>
         </div>
