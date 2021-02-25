@@ -1,8 +1,9 @@
 import React from "react";
+import NavbarContainer from "../components/Navbar/navbar_container";
 
 const App = () => (
   <div>
-    <h1>Bracketed Tax Engine</h1>
+    <NavbarContainer />
   </div>
 );
 
