@@ -8,16 +8,6 @@
     cursor: pointer; 
 }
 
-.blue-btn-small {
-    border: 1px black solid;
-    padding: 5px;
-    border-radius: 5px;
-    background: #fff;
-    color: #0066cc;
-    box-shadow: inset;
-    cursor: pointer; 
-}
-
 .yellow-btn {
     border: 1px black solid;
     padding: 10px;
