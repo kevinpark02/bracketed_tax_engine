@@ -18,6 +18,12 @@ class User < ApplicationRecord
     validates :password, length: { minimum: 6, allow_nil: true }
     # VALIDATIONS - END
 
+    # ASSOCIATIONS - START
+    has_many :clients,
+        primary_key: :id,
+        foreign_key: :accountant_id,
+        class_name: :Client
+    # ASSOCIATIONS - END
 
     # AUTHENTIFICATION METHODS - START
     attr_reader :password
