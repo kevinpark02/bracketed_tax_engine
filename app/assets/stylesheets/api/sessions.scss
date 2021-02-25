@@ -33,6 +33,35 @@
 .title-nav {
     color: #fff;
 }
+
+.logged-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    border: 1px black solid;
+    padding: 10px 0;
+}
+
+.logged-left {
+    display: flex;
+    margin-left: 20px;
+}
+
+.logged-left div:first-child {
+    margin-right: 20px;
+}
+
+.logged-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logged-right p {
+    margin-right: 20px;
+    color: #fff;
+}
 // Navbar - End
 
 // Session Form - Start
