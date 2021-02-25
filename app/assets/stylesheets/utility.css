@@ -16,3 +16,15 @@
     color: black;
     cursor: pointer;
 }
+
+input[type="text"] {
+    width: 60%;
+    font-size: 17px;
+    padding: 0 5px;
+}
+
+input[type="password"] {
+    width: 60%;
+    font-size: 17px;
+    padding: 0 5px;
+}
