@@ -25,11 +25,9 @@ const Navbar = ({currentUser, logout}) => {
     );
 
     return(
-        <header>
             <div>
                 {greeting}
             </div>
-        </header>
     )
 }
 

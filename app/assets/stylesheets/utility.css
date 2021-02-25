@@ -1,3 +1,10 @@
+/* Misc */
+.background {
+    background: rgb(252, 247, 241);
+    height: 100vh;
+}
+
+/* Button */
 .white-btn {
     border: 1px black solid;
     padding: 10px;
@@ -17,6 +24,8 @@
     cursor: pointer;
 }
 
+/* Inputs */
+
 input[type="text"] {
     width: 60%;
     font-size: 17px;
@@ -27,4 +36,24 @@ input[type="password"] {
     width: 60%;
     font-size: 17px;
     padding: 0 5px;
+}
+
+/* Dashboard Styling */
+
+.dashboard-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.dashboard-item {
+    display: block;
+    background: #333;
+    color: #e5e5e5;
+    font-size: 15px;
+    border: 5px solid #b2b2b2;
+    border-radius: 10px;
+    padding: 20px;
 }
