@@ -31,5 +31,6 @@ Bracket.delete_all
     b1 = Bracket.create(boundary: 10000, rate: 0, accountant_id: u1.id)
     b2 = Bracket.create(boundary: 20000, rate: 10, accountant_id: u1.id)
     b3 = Bracket.create(boundary: 50000, rate: 20, accountant_id: u1.id)
-    b4 = Bracket.create(boundary: 50000, rate: 30, accountant_id: u1.id)
+
+
     
