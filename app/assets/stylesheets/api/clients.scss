@@ -47,21 +47,46 @@
 
 .client-information-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px black dotted;
 }
 
 .client-information-row-update-form {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.client-information-row-update-form label:last-of-type {
-    margin-right: 20px;
+.client-information-row-update-form-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-information-row-update-form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.client-information-btns {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
 }
 
 .delete-client {
-    margin-left: 20px;
+    margin-left: 25px;
+}
+
+.tax-amount {
+    // margin-right: 25px;
+    color: red;
+    font-weight: bold;
 }

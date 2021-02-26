@@ -70,54 +70,60 @@ class ClientIndexItem extends React.Component {
             <div className="client-information-row">
                 <form className="client-information-row-update-form"
                       onSubmit={this.handleSubmit}>
-                    <label>
-                        First Name: &nbsp;
-                        <input type="text"
-                            value={this.state.fname}
-                            placeholder="First Name"
-                            onChange={this.update('fname')}/>
-                    </label>
+                    <div className="client-information-row-update-form-top">
+                        <label>
+                            First Name: &nbsp;
+                            <input type="text"
+                                value={this.state.fname}
+                                placeholder="First Name"
+                                onChange={this.update('fname')}/>
+                        </label>
 
-                    <label>
-                        Last Name: &nbsp;
-                        <input type="text"
-                            value={this.state.lname}
-                            placeholder="Last Name"
-                            onChange={this.update('lname')}/>
-                    </label>
+                        <label>
+                            Last Name: &nbsp;
+                            <input type="text"
+                                value={this.state.lname}
+                                placeholder="Last Name"
+                                onChange={this.update('lname')}/>
+                        </label>
 
-                    <label>
-                        Email: &nbsp;
-                        <input type="text"
-                            value={this.state.email}
-                            placeholder="Client Email"
-                            onChange={this.update('email')}/>
-                    </label>
+                        <label>
+                            Email: &nbsp;
+                            <input type="text"
+                                value={this.state.email}
+                                placeholder="Client Email"
+                                onChange={this.update('email')}/>
+                        </label>
 
-                    <label>
-                        Income: &nbsp;
-                        <input type="text"
-                            value={this.state.income}
-                            placeholder="Client Income"
-                            onChange={this.update('income')}/>
-                    </label>
+                        <label>
+                            Income: &nbsp;
+                            <input type="text"
+                                value={this.state.income}
+                                placeholder="Client Income"
+                                onChange={this.update('income')}/>
+                        </label>
+                    </div>
+                    <div className="client-information-row-update-form-bottom">
+                        <li className="tax-amount">
+                            {this.state.fname} {this.state.lname}'s Tax: &nbsp;
+                            <NumberFormat value={this.taxCalc(brackets, lowerBracket, income)} 
+                                        displayType={'text'} 
+                                        thousandSeparator={true} 
+                                        prefix={'$'}
+                                        />
+                        </li>
+                        <div className="client-information-btns">
+                            <input className="green-btn" type="submit" value="Update"/>
 
-                    <label>
-                        Tax: &nbsp;
-                        <NumberFormat value={this.taxCalc(brackets, lowerBracket, income)} 
-                                      displayType={'text'} 
-                                      thousandSeparator={true} 
-                                      prefix={'$'} />
-                    </label>
-
-                    <input className="green-btn" type="submit" value="Update"/>
-
+                            <li className="delete-client red-btn"
+                                onClick={this.handleDelete}>
+                                Delete Client
+                            </li>
+                        </div>
+                    </div>
                 </form>
 
-                <li className="delete-client red-btn"
-                    onClick={this.handleDelete}>
-                    Delete Client
-                </li>
+
             </div>
         );
     }
