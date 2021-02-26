@@ -16,6 +16,7 @@ const bracketsReducer = (state = {}, action) => {
             return action.currentUser.clients
         default:
             return state;
-        
     }
 }
+
+export default bracketsReducer;
