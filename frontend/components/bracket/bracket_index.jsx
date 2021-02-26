@@ -13,6 +13,7 @@ class BracketIndex extends React.Component {
 
     render() {
         const brackets = this.props.brackets;
+        const bracketsObject = this.props.bracketsObject;
         return(
             <div className="bracket-information">
                 <ul className="bracket-information-table">
@@ -24,7 +25,8 @@ class BracketIndex extends React.Component {
                                                 updateBracket={this.props.updateBracket}
                                                 deleteBracket={this.props.deleteBracket}
                                                 fetchUser={this.props.fetchUser}
-                                                userId={this.props.userId}/>
+                                                userId={this.props.userId}
+                                                bracketsObject={bracketsObject}/>
                         )
                     })}
                 </ul>

@@ -6,6 +6,7 @@ import BracketIndex from "./bracket_index";
 const mapStateToProps = (state) => {
     return({
         brackets: Object.values(state.entities.brackets),
+        bracketsObject: state.entities.brackets,
         userId: state.session.id
     });
 };

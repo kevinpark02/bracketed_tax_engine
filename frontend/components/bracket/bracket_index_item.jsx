@@ -21,8 +21,15 @@ class BracketIndexItem extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.updateBracket(this.state)
-            .then(() => this.props.fetchUser(this.props.userId))
+        // debugger
+        if (this.props.bracketsObject[this.state.boundary]) {
+            this.props.deleteBracket(this.props.bracketsObject[this.state.boundary])
+                .then(() => this.props.updateBracket(this.state))
+                .then(() => this.props.fetchUser(this.props.userId))
+            } else {
+                this.props.updateBracket(this.state)
+                    .then(() => this.props.fetchUser(this.props.userId))
+        }
     }
 
     render() {
