@@ -11,7 +11,7 @@ end
 json.brackets do
     @user.brackets.each do |bracket|
         json.set! bracket.boundary do
-            json.extract! bracket, :id, :boundary_type, :boundary, :rate, :accountant_id
+            json.extract! bracket, :id, :boundary, :rate, :accountant_id
         end
     end
 end
