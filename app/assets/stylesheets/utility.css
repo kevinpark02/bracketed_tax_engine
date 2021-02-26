@@ -1,7 +1,8 @@
 /* Misc */
 .background {
     background: rgb(252, 247, 241);
-    height: 100vh;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 /* Button */
