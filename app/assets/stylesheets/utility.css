@@ -24,6 +24,15 @@
     cursor: pointer;
 }
 
+.green-btn {
+    border: 1px black solid;
+    padding: 5px;
+    border-radius: 5px;
+    background: #00D100;
+    color: black;
+    cursor: pointer;
+}
+
 /* Inputs */
 
 input[type="text"] {

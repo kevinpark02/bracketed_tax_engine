@@ -13,9 +13,9 @@ class ClientIndex extends React.Component {
     render() {
         const clients = this.props.clients
         return(
-            <div>
+            <div className="client-information">
                 <h1>Client Information</h1>
-                <ul>
+                <ul className="client-information-table">
                     {clients.map(client => {
                         return(
                             <ClientIndexItem client={client}
