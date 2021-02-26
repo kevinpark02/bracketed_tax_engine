@@ -31,3 +31,23 @@
 .delete-bracket {
     margin-left: 20px;
 }
+
+// Bracket Create Form
+.bracket-create-form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bracket-create-form-row h3 {
+    margin-bottom: 10px;
+}
+
+.bracket-create-row-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

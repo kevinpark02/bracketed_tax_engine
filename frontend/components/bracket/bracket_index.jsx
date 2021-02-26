@@ -1,5 +1,6 @@
 import React from 'react';
 import BracketIndexItem from './bracket_index_item';
+import BracketCreateContainer from './bracket_create_container';
 
 class BracketIndex extends React.Component {
     constructor(props) {
@@ -28,6 +29,7 @@ class BracketIndex extends React.Component {
                         )
                     })}
                 </ul>
+                <BracketCreateContainer />
             </div>
         )
     }

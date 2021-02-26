@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createBracket, updateBracket, deleteBracket } from '../../actions/bracket_actions';
+import { updateBracket, deleteBracket } from '../../actions/bracket_actions';
 import { fetchUser } from '../../actions/session_actions';
 import BracketIndex from "./bracket_index";
 
@@ -12,7 +12,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return({
-        createBracket: (bracket) => dispatch(createBracket(bracket)),
         updateBracket: (bracket) => dispatch(updateBracket(bracket)),
         deleteBracket: (bracket) => dispatch(deleteBracket(bracket)),
         fetchUser: (userId) => dispatch(fetchUser(userId))
