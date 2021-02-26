@@ -6,7 +6,9 @@ import ClientIndex from './client_index';
 const mapStateToProps = (state) => {
     return({
         clients: Object.values(state.entities.clients),
-        userId: state.session.id
+        userId: state.session.id,
+        brackets: Object.values(state.entities.brackets),
+        lowerBracket: Object.values(state.entities.lowerBracket)
     });
 };
 

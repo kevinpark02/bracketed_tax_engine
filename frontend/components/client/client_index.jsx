@@ -23,7 +23,9 @@ class ClientIndex extends React.Component {
                                             updateClient={this.props.updateClient}
                                             deleteClient={this.props.deleteClient}
                                             fetchUser={this.props.fetchUser}
-                                            userId={this.props.userId}/>
+                                            userId={this.props.userId}
+                                            brackets={this.props.brackets}
+                                            lowerBracket={this.props.lowerBracket}/>
                         )
                     })}
                 </ul>
