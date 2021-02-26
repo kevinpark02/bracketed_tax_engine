@@ -19,7 +19,11 @@ class ClientIndex extends React.Component {
                     {clients.map(client => {
                         return(
                             <ClientIndexItem client={client}
-                                            key={client.id}/>
+                                            key={client.id}
+                                            updateClient={this.props.updateClient}
+                                            deleteClient={this.props.deleteClient}
+                                            fetchUser={this.props.fetchUser}
+                                            userId={this.props.userId}/>
                         )
                     })}
                 </ul>

@@ -4,16 +4,25 @@ class ClientIndexItem extends React.Component {
     constructor(props) {
         super(props)
         this.state = this.props.client;
+
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     update(field) {
         return e => this.setState({ [field]: e.target.value })
     }
 
+    handleSubmit(e){
+        e.preventDefault();
+        this.props.updateClient(this.state)
+            .then(() => this.props.fetchUser(this.props.userId))
+    }
+
     render() {
         return(
             <div className="client-information-row">
-                <form className="client-information-row-update-form">
+                <form className="client-information-row-update-form"
+                      onSubmit={this.handleSubmit}>
                     <label htmlFor="">
                         First Name: &nbsp;
                         <input type="text"
