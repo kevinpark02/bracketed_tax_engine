@@ -18,21 +18,19 @@ class BracketIndex extends React.Component {
                 <ul className="bracket-information-table">
                     <h2>Upper Boundary Brackets</h2>
                     {brackets.map(bracket => {
-                        if (bracket.boundary_type === "upper") {
-                            return(
-                                <BracketIndexItem bracket={bracket}
-                                                  key={bracket.id}
-                                                  updateBracket={this.props.updateBracket}
-                                                  deleteBracket={this.props.deleteBracket}
-                                                  fetchUser={this.props.fetchUser}
-                                                  userId={this.props.userId}/>
-                            )
-                        }
+                        return(
+                            <BracketIndexItem bracket={bracket}
+                                                key={bracket.id}
+                                                updateBracket={this.props.updateBracket}
+                                                deleteBracket={this.props.deleteBracket}
+                                                fetchUser={this.props.fetchUser}
+                                                userId={this.props.userId}/>
+                        )
                     })}
                 </ul>
                 <ul className="bracket-information-table">
                     <h2>Lower Boundary Bracket (there should only be one)</h2>
-                    {brackets.map(bracket => {
+                    {/* {brackets.map(bracket => {
                         if (bracket.boundary_type === "lower") {
                             return(
                                 <BracketIndexItem bracket={bracket}
@@ -43,7 +41,7 @@ class BracketIndex extends React.Component {
                                                   userId={this.props.userId}/>
                             )
                         }
-                    })}
+                    })} */}
                 </ul>
             </div>
         )

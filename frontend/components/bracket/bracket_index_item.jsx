@@ -27,26 +27,11 @@ class BracketIndexItem extends React.Component {
 
     render() {
         const bracket = this.props.bracket;
-        const checkbox = bracket.boundary_type === "upper" ?
-            <select onChange={this.update('boundary_type')}>
-                <option value="upper" defaultValue>Upper</option>
-                <option value="lower">Lower</option>
-            </select> 
-                :
-            <select onChange={this.update('boundary_type')}>
-                <option value="lower" defaultValue>Lower</option>
-                <option value="upper">Upper</option>
-            </select>
 
         return (
             <div className="bracket-information-row">
                 <form className="bracket-information-row-update-form"
                       onSubmit={this.handleSubmit}>
-
-                    <label>
-                        Boundary Type: &nbsp;
-                        {checkbox} &nbsp;
-                    </label>
 
                     <label>
                         Boundary: &nbsp;
