@@ -1,0 +1,1 @@
+json.partial! 'lower_bracket', lower_bracket: @lower_bracket

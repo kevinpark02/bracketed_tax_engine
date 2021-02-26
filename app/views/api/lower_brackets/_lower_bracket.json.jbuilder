@@ -1,0 +1,1 @@
+json.extract! lower_bracket, :id, :lower_boundary, :lower_rate, :accountant_id
