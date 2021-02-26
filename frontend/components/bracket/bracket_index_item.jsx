@@ -27,8 +27,8 @@ class BracketIndexItem extends React.Component {
 
     render() {
         const bracket = this.props.bracket;
-        const checkbox = bracket.type === "upper" ?
-            <select onChange={this.update('type')}>
+        const checkbox = bracket.boundary_type === "upper" ?
+            <select onChange={this.update('boundary_type')}>
                 <option value="upper" selected>Upper</option>
                 <option value="lower">Lower</option>
             </select> 
