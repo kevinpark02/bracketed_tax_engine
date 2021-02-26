@@ -1,11 +1,11 @@
 import React from 'react';
 
-class BracketCreateForm extends React.Component {
+class LowerBracketCreateForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            boundary: "",
-            rate: "",
+            lower_boundary: "",
+            lower_rate: "",
             accountant_id: this.props.accountantId
         }
 
@@ -20,10 +20,10 @@ class BracketCreateForm extends React.Component {
     
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createBracket(this.state)
+        this.props.createLowerBracket(this.state)
             .then(() => this.setState({
-                boundary: "",
-                rate: "",
+                lower_boundary: "",
+                lower_rate: "",
                 accountant_id: this.props.accountantId
             }))
     }
@@ -31,23 +31,23 @@ class BracketCreateForm extends React.Component {
     render() {
         return(
             <div className="bracket-create-form-row">
-                <h3>Create Upper Boundary Bracket</h3>
+                <h3>Create Lower Boundary Bracket</h3>
                 <form className="bracket-create-row-form"
                       onSubmit={this.handleSubmit}>
                     <label>
                         Boundary: &nbsp;
                         <input type="text"
-                                value={this.state.boundary}
+                                value={this.state.lower_boundary}
                                 placeholder="Boundary"
-                                onChange={this.update('boundary')}/>
+                                onChange={this.update('lower_boundary')}/>
                     </label>
 
                     <label>
                         Rate(%): &nbsp;
                         <input type="text"
-                                value={this.state.rate}
+                                value={this.state.lower_rate}
                                 placeholder="Rate"
-                                onChange={this.update('rate')}/>
+                                onChange={this.update('lower_rate')}/>
                     </label>
 
                     <input className="blue-btn" type="submit" value="Create"/>
@@ -57,4 +57,4 @@ class BracketCreateForm extends React.Component {
     }
 }
 
-export default BracketCreateForm;
+export default LowerBracketCreateForm;

@@ -15,7 +15,6 @@ class BracketIndex extends React.Component {
         const brackets = this.props.brackets;
         return(
             <div className="bracket-information">
-                <h1>Tax Brackets</h1>
                 <ul className="bracket-information-table">
                     <h2>Upper Boundary Brackets</h2>
                     {brackets.map(bracket => {

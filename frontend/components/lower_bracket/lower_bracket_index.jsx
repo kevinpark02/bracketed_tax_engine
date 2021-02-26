@@ -1,5 +1,6 @@
 import React from 'react';
 import LowerBracketIndexItem from './lower_bracket_index_item';
+import LowerBracketCreateContainer from "./lower_bracket_create_container";
 
 class LowerBracketIndex extends React.Component {
     constructor(props) {
@@ -13,8 +14,8 @@ class LowerBracketIndex extends React.Component {
     render() {
         const lowerBracket = this.props.lowerBracket;
         return(
-            <div className="lower-bracket-information">
-                <ul className="lower-bracket-information-table">
+            <div className="bracket-information">
+                <ul className="bracket-information-table">
                     <h2>Lower Boundary Bracket</h2>
                     {lowerBracket.map(lowerBracket => {
                         return(
@@ -27,6 +28,7 @@ class LowerBracketIndex extends React.Component {
                         )
                     })}
                 </ul>
+                <LowerBracketCreateContainer />
             </div>
         )
     }
