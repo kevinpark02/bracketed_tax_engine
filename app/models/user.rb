@@ -23,6 +23,11 @@ class User < ApplicationRecord
         primary_key: :id,
         foreign_key: :accountant_id,
         class_name: :Client
+
+    has_many :brackets,
+        primary_key: :id,
+        foreign_key: :accountant_id,
+        class_name: :Bracket
     # ASSOCIATIONS - END
 
     # AUTHENTIFICATION METHODS - START
