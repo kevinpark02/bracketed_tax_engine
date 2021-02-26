@@ -16,6 +16,7 @@ class ClientIndexItem extends React.Component {
     handleDelete(e){
         e.preventDefault();
         this.props.deleteClient(this.props.client.id)
+            .then(() => this.props.fetchUser(this.props.userId))
     }
 
     handleSubmit(e){
@@ -61,7 +62,7 @@ class ClientIndexItem extends React.Component {
                             onChange={this.update('income')}/>
                     </label>
 
-                    <input className="green-btn" type="submit" value="Update Client Info"/>
+                    <input className="green-btn" type="submit" value="Update"/>
 
                 </form>
 

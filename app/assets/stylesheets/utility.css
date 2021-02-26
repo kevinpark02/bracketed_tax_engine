@@ -26,11 +26,12 @@
 
 .green-btn {
     border: 1px black solid;
-    padding: 7px;
+    padding: 5px;
     border-radius: 5px;
-    background: #00D100;
-    color: black;
+    background: #007500;
+    color: #fff;
     cursor: pointer;
+    font-size: 16px;;
 }
 
 .red-btn {

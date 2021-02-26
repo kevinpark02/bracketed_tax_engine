@@ -18,6 +18,7 @@ export const updateClient = (client) => {
 
 export const deleteClient = (clientId) => {
     return $.ajax({
-        url: `/api/clients/${clientId}`
+        url: `/api/clients/${clientId}`,
+        method: "DELETE"
     })
 }
