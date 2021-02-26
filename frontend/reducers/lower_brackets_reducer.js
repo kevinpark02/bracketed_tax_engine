@@ -1,7 +1,7 @@
 import { RECEIVE_LOWER_BRACKET, REMOVE_LOWER_BRACKET } from "../actions/lower_bracket_actions";
 import { RECEIVE_CURRENT_USER } from "../actions/session_actions";
 
-const lowerBracketsReducer = (state = {}, action) => {
+const lowerBracketReducer = (state = {}, action) => {
   Object.freeze(state);
   let nextState = Object.assign({}, state);
 
@@ -19,4 +19,4 @@ const lowerBracketsReducer = (state = {}, action) => {
   }
 };
 
-export default lowerBracketsReducer;
+export default lowerBracketReducer;
