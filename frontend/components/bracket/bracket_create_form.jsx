@@ -20,12 +20,22 @@ class BracketCreateForm extends React.Component {
     
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createBracket(this.state)
+        if (this.props.bracketsObject[this.state.boundary]) {
+           this.props.deleteBracket(this.props.bracketsObject[this.state.boundary])
+            .then(() => this.props.createBracket(this.state))
             .then(() => this.setState({
                 boundary: "",
                 rate: "",
                 accountant_id: this.props.accountantId
-            }))
+            })) 
+        } else {
+            this.props.createBracket(this.state)
+                .then(() => this.setState({
+                    boundary: "",
+                    rate: "",
+                    accountant_id: this.props.accountantId
+                }))
+        }
     }
 
     render() {

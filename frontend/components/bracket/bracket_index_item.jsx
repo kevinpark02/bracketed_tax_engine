@@ -21,7 +21,6 @@ class BracketIndexItem extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // debugger
         if (this.props.bracketsObject[this.state.boundary]) {
             this.props.deleteBracket(this.props.bracketsObject[this.state.boundary])
                 .then(() => this.props.updateBracket(this.state))
