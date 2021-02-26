@@ -16,15 +16,33 @@ class BracketIndex extends React.Component {
             <div className="bracket-information">
                 <h1>Tax Brackets</h1>
                 <ul className="bracket-information-table">
+                    <h2>Upper Boundary Brackets</h2>
                     {brackets.map(bracket => {
-                        return(
-                            <BracketIndexItem bracket={bracket}
-                                              key={bracket.id}
-                                              updateBracket={this.props.updateBracket}
-                                              deleteBracket={this.props.deleteBracket}
-                                              fetchUser={this.props.fetchUser}
-                                              userId={this.props.userId}/>
-                        )
+                        if (bracket.type === "upper") {
+                            return(
+                                <BracketIndexItem bracket={bracket}
+                                                  key={bracket.id}
+                                                  updateBracket={this.props.updateBracket}
+                                                  deleteBracket={this.props.deleteBracket}
+                                                  fetchUser={this.props.fetchUser}
+                                                  userId={this.props.userId}/>
+                            )
+                        }
+                    })}
+                </ul>
+                <ul className="bracket-information-table">
+                    <h2>Lower Boundary Bracket (there should only be one)</h2>
+                    {brackets.map(bracket => {
+                        if (bracket.type === "lower") {
+                            return(
+                                <BracketIndexItem bracket={bracket}
+                                                  key={bracket.id}
+                                                  updateBracket={this.props.updateBracket}
+                                                  deleteBracket={this.props.deleteBracket}
+                                                  fetchUser={this.props.fetchUser}
+                                                  userId={this.props.userId}/>
+                            )
+                        }
                     })}
                 </ul>
             </div>

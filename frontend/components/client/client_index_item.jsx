@@ -30,7 +30,7 @@ class ClientIndexItem extends React.Component {
             <div className="client-information-row">
                 <form className="client-information-row-update-form"
                       onSubmit={this.handleSubmit}>
-                    <label htmlFor="">
+                    <label>
                         First Name: &nbsp;
                         <input type="text"
                             value={this.state.fname}
