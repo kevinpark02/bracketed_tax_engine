@@ -6,10 +6,16 @@ class ClientIndexItem extends React.Component {
         this.state = this.props.client;
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     update(field) {
         return e => this.setState({ [field]: e.target.value })
+    }
+
+    handleDelete(e){
+        e.preventDefault();
+        this.props.deleteClient(this.props.client.id)
     }
 
     handleSubmit(e){
@@ -55,9 +61,14 @@ class ClientIndexItem extends React.Component {
                             onChange={this.update('income')}/>
                     </label>
 
-                    <input className="green-btn" type="submit" value="Update"/>
+                    <input className="green-btn" type="submit" value="Update Client Info"/>
 
                 </form>
+
+                <li className="delete-client red-btn"
+                    onClick={this.handleDelete}>
+                    Delete Client
+                </li>
             </div>
         );
     }

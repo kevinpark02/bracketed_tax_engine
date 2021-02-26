@@ -26,10 +26,19 @@
 
 .green-btn {
     border: 1px black solid;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     background: #00D100;
     color: black;
+    cursor: pointer;
+}
+
+.red-btn {
+    border: 1px black solid;
+    padding: 5px;
+    border-radius: 5px;
+    background: #cc0000;
+    color: #fff;
     cursor: pointer;
 }
 
