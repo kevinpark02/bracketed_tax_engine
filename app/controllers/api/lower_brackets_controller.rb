@@ -22,7 +22,7 @@ class Api::LowerBracketsController < ApplicationController
     end
 
     def destroy
-        @lower_bracket = current_user.lower_bracket.find_by(id: params[:id])
+        @lower_bracket = current_user.lower_brackets.find_by(id: params[:id])
 
         if @lower_bracket && @lower_bracket.destroy
             render json: ["You have deleted your lower boundary bracket"]
@@ -34,6 +34,6 @@ class Api::LowerBracketsController < ApplicationController
     private
     
     def lower_bracket_params
-        params.require(:lower_bracket).permit(:lower_boundary, :lower_rate, :accountant_id)
+        params.require(:lowerBracket).permit(:lower_boundary, :lower_rate, :accountant_id)
     end
 end

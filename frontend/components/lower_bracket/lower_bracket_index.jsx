@@ -19,7 +19,7 @@ class LowerBracketIndex extends React.Component {
                     {lowerBracket.map(lowerBracket => {
                         return(
                             <LowerBracketIndexItem lowerBracket={lowerBracket}
-                                                key={lowerBracket.id}
+                                                key={lowerBracket}
                                                 updateLowerBracket={this.props.updateLowerBracket}
                                                 deleteLowerBracket={this.props.deleteLowerBracket}
                                                 fetchUser={this.props.fetchUser}

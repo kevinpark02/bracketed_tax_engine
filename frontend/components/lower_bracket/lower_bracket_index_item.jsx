@@ -26,7 +26,6 @@ class LowerBracketIndexItem extends React.Component {
     }
 
     render() {
-        debugger
         const lowerBracket = this.props.lowerBracket;
 
         return (

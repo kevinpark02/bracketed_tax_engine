@@ -1,3 +1,28 @@
 // Place all the styles related to the api/lower_brackets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.lower-bracket-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.lower-bracket-information-table {
+    margin-top: 20px;
+}
+
+.lower-bracket-information-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lower-bracket-information-row-update-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
