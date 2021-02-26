@@ -1,1 +1,1 @@
-json.extract! bracket, :id, :type, :boundary, :rate, :accountant_id
+json.extract! bracket, :id, :boundary_type, :boundary, :rate, :accountant_id

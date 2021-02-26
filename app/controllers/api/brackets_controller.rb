@@ -34,6 +34,6 @@ class Api::BracketsController < ApplicationController
     private
     
     def bracket_params
-        params.require(:bracket).permit(:type, :boundary, :rate, :accountant_id)
+        params.require(:bracket).permit(:boundary_type, :boundary, :rate, :accountant_id)
     end
 end

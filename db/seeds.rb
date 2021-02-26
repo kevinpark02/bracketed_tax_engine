@@ -8,6 +8,7 @@
 
 User.delete_all
 Client.delete_all
+Bracket.delete_all
 
 # User seed
     u1 = User.create(email: 'kevin.park02@gmail.com', fname: 'Kevin', lname: 'Park', password: 'test123')
@@ -26,5 +27,9 @@ Client.delete_all
     c9 = Client.create(email: 'michelle.ou@gmail.com', fname: 'Michelle', lname: 'Ou', income: 50000, accountant_id: u2.id)
     c10 = Client.create(email: 'mabelle.erhahon@gmail.com', fname: 'Mabelle', lname: 'Erhahon', income: 100000, accountant_id: u2.id)
     
-    
+# Bracket seed
+    b1 = Bracket.create(boundary_type: "upper", boundary: 10000, rate: 0, accountant_id: u1.id)
+    b2 = Bracket.create(boundary_type: "upper", boundary: 20000, rate: 10, accountant_id: u1.id)
+    b3 = Bracket.create(boundary_type: "upper", boundary: 50000, rate: 20, accountant_id: u1.id)
+    b4 = Bracket.create(boundary_type: "lower", boundary: 50000, rate: 30, accountant_id: u1.id)
     
