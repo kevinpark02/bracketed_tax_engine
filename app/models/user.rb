@@ -29,7 +29,7 @@ class User < ApplicationRecord
         foreign_key: :accountant_id,
         class_name: :Bracket
 
-    has_one :lower_bracket,
+    has_many :lower_brackets,
         primary_key: :id,
         foreign_key: :accountant_id,
         class_name: :LowerBracket

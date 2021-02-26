@@ -1,6 +1,6 @@
 class Api::UsersController < ApplicationController
     def show
-        @user = User.includes(:clients).find_by(id: params[:id])
+        @user = User.includes(:clients, :brackets, :lower_brackets).find_by(id: params[:id])
     end
 
     def create

@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 import { createLowerBracket, updateLowerBracket, deleteLowerBracket } from '../../actions/lower_bracket_actions';
 import { fetchUser } from '../../actions/session_actions';
-import LowerBracketIndex from "./bracket_index";
+import LowerBracketIndex from "./lower_bracket_index";
 
 const mapStateToProps = (state) => {
     return({
-        lowerBrackets: Object.values(state.entities.lowerBracket),
+        lowerBracket: Object.values(state.entities.lowerBracket),
         userId: state.session.id
     });
 };

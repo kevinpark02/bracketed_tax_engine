@@ -6,6 +6,7 @@ import Dashboard from "./dashboard/dashboard";
 import ClientIndexContainer from "./client/client_index_container";
 import CreateClientContainer from "./client/create_client_container";
 import BracketIndexContainer from "./bracket/bracket_index_container";
+import LowerBracketIndexContainer from "./lower_bracket/lower_bracket_index_container";
 
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
@@ -22,6 +23,7 @@ const App = () => (
     <ProtectedRoute path="/new_client" component={CreateClientContainer} />
     <ProtectedRoute path="/client_info" component={ClientIndexContainer} />
     <ProtectedRoute path="/tax_bracket" component={BracketIndexContainer}/>
+    <ProtectedRoute path="/tax_bracket" component={LowerBracketIndexContainer}/>
 </div>
 );
 
