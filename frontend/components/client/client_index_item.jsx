@@ -108,7 +108,6 @@ class ClientIndexItem extends React.Component {
                                       displayType={'text'} 
                                       thousandSeparator={true} 
                                       prefix={'$'} />
-                        {/* {this.taxCalc(brackets, lowerBracket, income)} */}
                     </label>
 
                     <input className="green-btn" type="submit" value="Update"/>
