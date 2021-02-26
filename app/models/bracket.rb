@@ -8,10 +8,9 @@
 #  accountant_id :integer          not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
-#  boundary_type :string           not null
 #
 class Bracket < ApplicationRecord
-    validates :boundary_type, :boundary, :rate, :accountant_id, presence: true
+    validates :boundary, :rate, :accountant_id, presence: true
 
     belongs_to :accountant,
         primary_key: :id,
