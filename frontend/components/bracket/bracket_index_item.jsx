@@ -29,13 +29,13 @@ class BracketIndexItem extends React.Component {
         const bracket = this.props.bracket;
         const checkbox = bracket.boundary_type === "upper" ?
             <select onChange={this.update('boundary_type')}>
-                <option value="upper" selected>Upper</option>
+                <option value="upper" defaultValue>Upper</option>
                 <option value="lower">Lower</option>
             </select> 
                 :
-            <select>
+            <select onChange={this.update('boundary_type')}>
+                <option value="lower" defaultValue>Lower</option>
                 <option value="upper">Upper</option>
-                <option value="lower" selected>Lower</option>
             </select>
 
         return (
@@ -45,7 +45,7 @@ class BracketIndexItem extends React.Component {
 
                     <label>
                         Boundary Type: &nbsp;
-                        {checkbox}
+                        {checkbox} &nbsp;
                     </label>
 
                     <label>
@@ -68,7 +68,7 @@ class BracketIndexItem extends React.Component {
 
                 </form>
 
-                <li className="red-btn"
+                <li className="red-btn delete-bracket"
                     onClick={this.handleDelete}>
                     Delete Bracket
                 </li>
