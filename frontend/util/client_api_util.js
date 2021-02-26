@@ -1,5 +1,3 @@
-import { $CombinedState } from "redux"
-
 export const createClient = (client) => {
     return $.ajax({
         url: `/api/clients`,
@@ -20,5 +18,5 @@ export const deleteClient = (clientId) => {
     return $.ajax({
         url: `/api/clients/${clientId}`,
         method: "DELETE"
-    })
-}
+    });
+};
