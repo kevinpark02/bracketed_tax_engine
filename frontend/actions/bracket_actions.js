@@ -10,10 +10,10 @@ export const receiveBracket = (bracket) => {
     });
 };
 
-export const removeBracket = (bracketId) => {
+export const removeBracket = (bracket) => {
     return({
         type: REMOVE_BRACKET,
-        bracketId
+        bracket
     });
 };
 
@@ -27,7 +27,7 @@ export const updateBracket = (bracket) => dispatch => {
         .then(bracket => dispatch(receiveBracket(bracket)));
 };
 
-export const deleteBracket = (bracketId) => dispatch => {
-    return BracketApiUtil.deleteBracket(bracketId)
-        .then(() => dispatch(removeBracket(bracketId)));
+export const deleteBracket = (bracket) => dispatch => {
+    return BracketApiUtil.deleteBracket(bracket.id)
+        .then(() => dispatch(removeBracket(bracket)));
 };
