@@ -1,4 +1,5 @@
 import React from 'react';
+import NumberFormat from 'react-number-format';
 
 class ClientIndexItem extends React.Component {
     constructor(props) {
@@ -103,7 +104,11 @@ class ClientIndexItem extends React.Component {
 
                     <label>
                         Tax: &nbsp;
-                        {this.taxCalc(brackets, lowerBracket, income)}
+                        <NumberFormat value={this.taxCalc(brackets, lowerBracket, income)} 
+                                      displayType={'text'} 
+                                      thousandSeparator={true} 
+                                      prefix={'$'} />
+                        {/* {this.taxCalc(brackets, lowerBracket, income)} */}
                     </label>
 
                     <input className="green-btn" type="submit" value="Update"/>
@@ -114,10 +119,6 @@ class ClientIndexItem extends React.Component {
                     onClick={this.handleDelete}>
                     Delete Client
                 </li>
-
-                {/* <div>
-                    {this.taxCalc(brackets, lowerBracket, income)}
-                </div> */}
             </div>
         );
     }
