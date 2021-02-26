@@ -7,3 +7,11 @@ json.clients do
         end
     end
 end
+
+json.brackets do
+    @user.brackets.each do |bracket|
+        json.set! bracket.boundary do
+            json.extract! bracket, :id, :type, :boundary, :rate, :accountant_id
+        end
+    end
+end
