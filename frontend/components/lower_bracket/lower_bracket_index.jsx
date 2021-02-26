@@ -13,10 +13,13 @@ class LowerBracketIndex extends React.Component {
 
     render() {
         const lowerBracket = this.props.lowerBracket;
+        const lowerBracketForm = lowerBracket.length === 0 ?
+            <LowerBracketCreateContainer /> :
+            null
         return(
             <div className="bracket-information">
                 <ul className="bracket-information-table">
-                    <h2>Lower Boundary Bracket</h2>
+                    <h2>Lower Boundary Bracket (there should only be one)</h2>
                     {lowerBracket.map(lowerBracket => {
                         return(
                             <LowerBracketIndexItem lowerBracket={lowerBracket}
@@ -28,7 +31,7 @@ class LowerBracketIndex extends React.Component {
                         )
                     })}
                 </ul>
-                <LowerBracketCreateContainer />
+                {lowerBracketForm}
             </div>
         )
     }
