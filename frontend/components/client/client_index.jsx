@@ -6,6 +6,10 @@ class ClientIndex extends React.Component {
         super(props)
     }
 
+    componentDidMount() {
+        this.props.fetchUser(this.props.userId);
+    }
+
     render() {
         const clients = this.props.clients
         return(
