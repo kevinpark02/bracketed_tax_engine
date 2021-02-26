@@ -15,3 +15,11 @@ json.brackets do
         end
     end
 end
+
+json.lower_bracket do
+    @user.lower_bracket.each do |lower_bracket|
+        json.set! lower_bracket.lower_boundary do 
+            json.extract! lower_bracket, :id, :lower_boundary, :rate, :accountant_id
+        end
+    end
+end
