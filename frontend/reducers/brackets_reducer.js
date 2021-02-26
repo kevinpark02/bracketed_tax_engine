@@ -13,7 +13,7 @@ const bracketsReducer = (state = {}, action) => {
             delete nextState[action.bracket.boundary];
             return nextState;
         case RECEIVE_CURRENT_USER:
-            return action.currentUser.clients
+            return action.currentUser.brackets
         default:
             return state;
     }
