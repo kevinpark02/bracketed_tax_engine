@@ -1,0 +1,2 @@
+class LowerBracket < ApplicationRecord
+end

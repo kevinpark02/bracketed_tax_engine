@@ -1,0 +1,2 @@
+class Lbracket < ApplicationRecord
+end
