@@ -32,5 +32,8 @@ Bracket.delete_all
     b2 = Bracket.create(boundary: 20000, rate: 10, accountant_id: u1.id)
     b3 = Bracket.create(boundary: 50000, rate: 20, accountant_id: u1.id)
 
+# Lower Bracket seed
+    lb1 = LowerBracket.create(lower_boundary: 50000, lower_rate: 30, accountant_id: u1.id)
+
 
     
