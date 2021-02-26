@@ -5,7 +5,6 @@ import SignupFormContainer from "./session_form/signup_form_container";
 import Dashboard from "./dashboard/dashboard";
 import ClientIndexContainer from "./client/client_index_container";
 
-import { Route } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 const App = () => (

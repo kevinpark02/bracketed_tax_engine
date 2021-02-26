@@ -13,7 +13,7 @@ const clientsReducer = (state = {}, action) => {
             delete nextState[action.clientId];
             return nextState;
         case RECEIVE_CURRENT_USER:
-            return Object.assign(nextState, action.currentUser.clients)
+            return action.currentUser.clients
         default:
             return state;
     };
