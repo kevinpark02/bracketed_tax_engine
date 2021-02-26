@@ -2,6 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Client Create Form
+.client-form-container {
+    border: 1px #989898 solid;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 0;
+    background: #efefef;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.15);
+}
+
+.client-form-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.client-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.client-form input {
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+// Client Information
 .client-information {
     display: flex;
     flex-direction: column;

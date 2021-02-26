@@ -7,9 +7,11 @@ class CreateClientForm extends React.Component {
             fname: "",
             lname: "",
             email: "",
-            income: 0,
+            income: "",
             accountant_id: this.props.accountantId
         }
+
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     update(field) {
@@ -21,13 +23,15 @@ class CreateClientForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.createClient(this.state)
+            .then(() => this.props.history.push("/client_info"));
     }
 
     render() {
         return(
-            <div>
-                <h1>Add New Client</h1>
-                <form>
+            <div className="client-form-container">
+                <h3>Add New Client</h3>
+                <form className="client-form"
+                      onSubmit={this.handleSubmit}>
                     <input type="text"
                            value={this.state.fname}
                            placeholder="Client's First Name"
@@ -52,7 +56,7 @@ class CreateClientForm extends React.Component {
                            onChange={this.update('income')}
                            className="input-fields"/>
 
-                    <input type="submit" value="Add Client"/>
+                    <input type="submit" value="Add Client" className="yellow-btn session-form-btn"/>
                 </form>
             </div>
         )
