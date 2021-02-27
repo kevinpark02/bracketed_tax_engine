@@ -14,6 +14,10 @@ class CreateClientForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    componentDidMount() {
+      this.props.removeClientErrors();
+    }
+
     update(field) {
         return (e) => {
             this.setState({ [field]: e.target.value })
@@ -26,10 +30,25 @@ class CreateClientForm extends React.Component {
             .then(() => this.props.history.push("/client_info"));
     }
 
+    renderErrors(){
+        const errors = this.props.errors;
+
+        return(
+            <ul className="session-errors">
+                {errors.map((error, i) => (
+                    <li key={i}>
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        )
+    }
+
     render() {
         return(
             <div className="client-form-container">
                 <h3>Add New Client</h3>
+                {this.renderErrors()}
                 <form className="client-form"
                       onSubmit={this.handleSubmit}>
                     <input type="text"
