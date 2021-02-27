@@ -20,6 +20,7 @@ class LowerBracketIndex extends React.Component {
             <div className="bracket-information">
                 <ul className="bracket-information-table">
                     <h2>Lower Boundary Bracket (there should only be one)</h2>
+                    <p>Ex: Any portion of the income that is above $50k is taxed at 30%.</p>
                     {lowerBracket.map(lowerBracket => {
                         return(
                             <LowerBracketIndexItem lowerBracket={lowerBracket}

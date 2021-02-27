@@ -18,6 +18,9 @@ class BracketIndex extends React.Component {
             <div className="bracket-information">
                 <ul className="bracket-information-table">
                     <h2>Upper Boundary Brackets</h2>
+                    <p>Ex:</p>
+                    <p>The portion of the income that is less than $10k is untaxed.</p>
+                    <p>The portion of the income that is less than $20k is taxed at 10%.</p>                    
                     {brackets.map(bracket => {
                         return(
                             <BracketIndexItem bracket={bracket}
