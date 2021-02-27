@@ -108,7 +108,19 @@ input[type="password"] {
     border-radius: 15px;
 }
 
-.home-description h1, h2, p {
+.home-description h1 {
+    color: #fff;
+    padding: 20px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.home-description h2 {
+    color: #fff;
+    padding: 20px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.home-description p {
     color: #fff;
     padding: 20px;
     font-family: 'RocknRoll One', sans-serif;
