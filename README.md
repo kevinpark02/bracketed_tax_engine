@@ -41,3 +41,8 @@ You can sign up for an account by filling out your information, and you will be 
 Log into your account
 
 <img src="./app/assets/images/readme_login.gif">
+
+### Adding new client
+Type in the ```first name```, ```last name```, ```email```, and ```income``` of a client to add to the database. Afterwards, you will be redirected to the client information page.
+<img src="./app/assets/images/readme_addclient.gif">
+
