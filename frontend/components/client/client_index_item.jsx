@@ -29,6 +29,10 @@ class ClientIndexItem extends React.Component {
     taxCalc(brackets, lowerBracket, income) {
         let tax = 0;
         let incomeTrack = income;
+
+        if (brackets.length === 0) {
+            return tax;
+        }
     
         for(let i = 0; i < brackets.length; i++){
             if (i === 0) {
@@ -65,6 +69,9 @@ class ClientIndexItem extends React.Component {
         const brackets = this.props.brackets;
         const lowerBracket = this.props.lowerBracket;
         const income = this.props.client.income
+        const errorMessage = brackets.length === 0 ?
+        <p>Please create tax brackets</p> :
+        null
 
         return(
             <div className="client-information-row">
@@ -111,6 +118,7 @@ class ClientIndexItem extends React.Component {
                                         thousandSeparator={true} 
                                         prefix={'$'}
                                         />
+                            {errorMessage}
                         </li>
                         <div className="client-information-btns">
                             <input className="green-btn" type="submit" value="Update"/>
