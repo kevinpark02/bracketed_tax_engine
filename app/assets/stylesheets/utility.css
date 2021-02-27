@@ -87,3 +87,39 @@ input[type="password"] {
     border-radius: 10px;
     padding: 20px;
 }
+
+/* Homepage */
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.home-description {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 30px;
+    border: 1px black solid;
+    background-image: linear-gradient(to bottom right, #0079bf,rgb(78, 107, 195));
+    border-radius: 15px;
+}
+
+.home-description h1, h2, p {
+    color: #fff;
+    padding: 20px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.home-image {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.home-image img {
+    width: 100%;
+    border-radius: 10px;
+}
