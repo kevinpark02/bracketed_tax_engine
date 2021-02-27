@@ -60,4 +60,4 @@ Tax bracket with lower boundary such as ```Any portion of the income that is abo
 ### Calculating clients' tax
 Once ```client information``` and ```tax brackets``` are added, ```client information page``` will display each client's ```tax amount``` when the page is loaded. 
 
-<img src="./app/assets/images/readme_clientinfo.gif>
+<img src="./app/assets/images/readme_clientinfo.gif">
