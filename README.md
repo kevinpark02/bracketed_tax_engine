@@ -15,3 +15,8 @@ Write a program that calculates income tax based on the following rules:
 * Assume this aplication will be used by a 3rd party tax consultant who will have to run this for 100 clients.
 * Write a program that is scalable.
 * The program should take the $ income and return the tax amount
+
+### Prompt 2
+* Imagine there are actually 50+ brackets that change every year, and we need to compute 1
+Billion income tax projections every year.
+* Describe in a few bullet points how you’d build a solution that scales.
