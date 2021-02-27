@@ -30,3 +30,8 @@ Billion income tax projections every year.
 * Type ```rails s``` into the command line
 * Type ```npm start``` into the command line
 * Go to ```http://localhost:3000/#/```
+
+## Navigation Instruction
+### New User - Sign Up
+You can sign up for an account by filling out your information!
+<img src="./app/assets/images/readme_signup.gif">
