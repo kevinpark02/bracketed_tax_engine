@@ -20,3 +20,13 @@ Write a program that calculates income tax based on the following rules:
 * Imagine there are actually 50+ brackets that change every year, and we need to compute 1
 Billion income tax projections every year.
 * Describe in a few bullet points how you’d build a solution that scales.
+
+## Installation Instruction
+### Installing dependencies
+* Delete ```Gemfile.lock``` and ```package-lock.json```
+* Type ```bundle install``` into the command line
+* Type ```npm install``` into the command line
+### Running the application locally
+* Type ```rails s``` into the command line
+* Type ```npm start``` into the command line
+* Go to ```http://localhost:3000/#/```
