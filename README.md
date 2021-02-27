@@ -33,5 +33,11 @@ Billion income tax projections every year.
 
 ## Navigation Instruction
 ### New User - Sign Up
-You can sign up for an account by filling out your information!
+You can sign up for an account by filling out your information, and you will be sent to your dashboard
+
 <img src="./app/assets/images/readme_signup.gif">
+
+### Existing User - Log In
+Log into your account
+
+<img src="./app/assets/images/readme_login.gif">
